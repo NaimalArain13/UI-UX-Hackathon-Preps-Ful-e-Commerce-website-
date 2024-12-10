@@ -70,7 +70,7 @@ function BestSellingProduct() {
     <div className="flex justify-between items-center py-4">
     <div className="flex flex-col gap-5 py-4 ">
         <div className="flex items-center gap-2">
-          <div className="bg-Button2 w-4 h-10 border border-Button2"></div>{" "}
+          <div className="bg-Button2 rounded w-4 h-10 border border-Button2"></div>{" "}
           <h1 className="font-sm text-Secondary2">This Month</h1>
         </div>
         

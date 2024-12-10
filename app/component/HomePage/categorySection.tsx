@@ -26,7 +26,7 @@ function CategorySection() {
   return (
     <>
      {/* Category Section */}
-     <div className="flex flex-col gap-7 p-7">
+     <div className="mx-auto w-full max-w-7xl p-7">
      <div className="flex flex-col gap-5 py-4 ">
        <div className="flex items-center gap-2">
          <div className="bg-Button2 w-4 h-10 rounded border border-Button2"></div>{" "}
