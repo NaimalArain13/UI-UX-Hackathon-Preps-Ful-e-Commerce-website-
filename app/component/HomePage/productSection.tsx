@@ -1,5 +1,5 @@
 "use client"
-import { Button } from '@/components/ui/button'
+
 import React from 'react'
 import JustForYou from '../justForYou'
 import { CiHeart } from 'react-icons/ci';
@@ -129,7 +129,7 @@ function ProductSection() {
         },
       ];
   return (
-    <div className="mx-auto w-full h-auto max-w-7xl py-12">
+    <div className="mx-auto w-full h-auto max-w-7xl p-7 py-12">
    
     <div className="flex justify-between items-center py-4">
     <div className="flex flex-col gap-5 py-4 ">
@@ -139,14 +139,14 @@ function ProductSection() {
         </div>
         
         <div>
-          <h1 className="font-semibold text-[36px]">Explore Our Products</h1>
+          <h1 className="font-semibold  text-2xl md:text-[36px]">Explore Our Products</h1>
         </div>
       </div>
      
     </div>
     <div className="grid grid-cols sm:grid-cols-2 md:grid-cols-4 gap-6 ">
       {wishlistProps2.map((card, index) => (
-        <Link href={`/${card.id}`}>
+        <Link key={index} href={"/productDetail"}>
         <JustForYou key={index} {...card} />
         </Link>
       ))}

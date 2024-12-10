@@ -14,14 +14,14 @@ const CartRow = ({index,image, product,price,subtotal}:RowPropType) => {
         <td className="py-4 px-5 text-gray-500">{index}</td>
         
         <td className="py-4 px-5 flex gap-5 items-center">
-            <div className="flex gap-3 items-center">
+            <div className="flex gap-3 flex-col md:flex-row items-center">
           <Image
             src={image || "/placeholder-image.png"}
             alt="product"
             width={54}
             height={54}
             className="rounded shadow"
-          /> <p className="text-gray-800 font-medium">{product}</p>
+          /> <p className="text-gray-800 md:font-medium">{product}</p>
           </div>
         </td>
         <td className="py-4 px-5 text-gray-800 ">

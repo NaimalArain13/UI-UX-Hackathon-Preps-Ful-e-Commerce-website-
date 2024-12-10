@@ -214,7 +214,8 @@ export default function ProductDetailPage() {
       
         <div className="grid grid-cols sm:grid-cols-2 md:grid-cols-4 gap-6 ">
       {wishlistProps2.map((card, index) => (
-        <Link href={`/${card.id}`}>
+        <Link  key={index}
+        href={`/${card.id}`}>
         <JustForYou key={index} {...card} />
         </Link>
       ))}

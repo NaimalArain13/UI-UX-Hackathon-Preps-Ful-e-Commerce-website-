@@ -1,7 +1,9 @@
 "use client";
+import BreadCrumb from "@/app/component/breadCrumb";
 import JustForYou from "@/app/component/justForYou";
 import ProductCard, { ProductCardProps } from "@/app/component/wishlist";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import React from "react";
 
 export default function WishListPage() {
@@ -114,7 +116,8 @@ export default function WishListPage() {
     },
   ];
   return (
-    <div className="mx-auto  container min-h-screen py-12">
+    <div className="max-w-7xl w-full mx-auto p-7">
+      <BreadCrumb route={"Wishlist"}/>
       <div className="flex justify-between items-center py-4">
         <h1 className="font-medium text-xl">Wishlist (4)</h1>
         <Button
@@ -126,7 +129,9 @@ export default function WishListPage() {
       </div>
       <div className="grid grid-cols sm:grid-cols-2 md:grid-cols-4 gap-6 mb-9">
         {wishlistProps1.map((wishlist, index) => (
+          <Link key={index} href={"/productDetail"}>
           <ProductCard key={index} {...wishlist} />
+          </Link>
         ))}
       </div>
 
@@ -144,7 +149,9 @@ export default function WishListPage() {
       </div>
       <div className="grid grid-cols sm:grid-cols-2 md:grid-cols-4 gap-6 ">
         {wishlistProps2.map((card, index) => (
+          <Link key={index} href={"/productDetail"}>
           <JustForYou key={index} {...card} />
+          </Link>
         ))}
       </div>
     </div>

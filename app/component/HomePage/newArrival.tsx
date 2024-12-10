@@ -3,17 +3,17 @@ import Image from "next/image";
 import { Button } from '@/components/ui/button';
 function NewArrival() {
   return (
-    <div className="mx-auto w-full h-auto max-w-7xl py-12">
+    <div className="mx-auto w-full h-auto max-w-7xl p-7 py-12">
    
     <div className="py-4">
-    <div className="flex flex-col gap-5 py-4">
+    <div className="flex flex-col gap-5 py-4 ">
         <div className="flex items-center gap-2">
           <div className="bg-Button2 rounded w-4 h-10 border border-Button2"></div>{" "}
           <h1 className="font-sm  text-Secondary2">Featured</h1>
         </div>
         
         <div>
-          <h1 className="font-semibold text-[36px]">New Arrival</h1>
+          <h1 className="font-semibold text-2xl md:text-[36px]">New Arrival</h1>
         </div>
     </div>
     <div className='grid grid-cols md:grid-cols-4 md:grid-rows-2 gap-[25px]'>
@@ -32,7 +32,7 @@ function NewArrival() {
    <Image src="/images/womanHat.png" alt="Box 2" width={432} height={286} 
    className="justify-self-end"/>
     <div className='absolute bottom-2 left-2 p-2 space-y-4 text-Primary'>
-        <h1 className='font-semibold text-2xl'>Women's Collections</h1>
+        <h1 className='font-semibold text-2xl'>Women&#3;s Collections</h1>
         <p className='text-sm'>Featured woman collections that give you another vibe.</p>
         <MyButton />
     </div>

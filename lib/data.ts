@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import { CiHeart } from "react-icons/ci";
 
 export interface ProductCardProps {
     id:number,

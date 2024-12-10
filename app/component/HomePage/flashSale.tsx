@@ -63,23 +63,25 @@ function FlashSale() {
     },
   ];
   return (
-    <div className="mx-auto w-full max-w-7xl py-7">
+    <div className="mx-auto w-full max-w-7xl p-7">
 
-      <div className="flex items-center gap-2">
+      <div className="flex items-center justify-start gap-2">
         <div className="bg-Button2 rounded w-4 h-10 border border-Button2"></div>{" "}
-        <h1 className="font-sm  text-Secondary2">Today's</h1>
+        <h1 className="font-sm  text-Secondary2">Today&#39;s</h1>
       </div>
 
-      <div className="flex items-center  gap-9 py-4">
+      <div className="flex md:items-center items-start flex-col md:flex-row gap-8 py-4">
         <div>
-          <h1 className="font-semibold text-[36px]">Flash Sales</h1>
+          <h1 className="font-semibold  text-2xl md:text-[36px]">Flash Sales</h1>
         </div>
+       
       <CountDownTimer />
+     
       </div>
 
       <div className="grid grid-cols sm:grid-cols-2 md:grid-cols-4 gap-6 ">
       {wishlistProps2.map((card, index) => (
-        <Link href={`/${card.id}`}>
+        <Link key={index} href={"/productDetail"}>
         <JustForYou key={index} {...card} />
         </Link>
       ))}

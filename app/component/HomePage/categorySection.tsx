@@ -34,10 +34,10 @@ function CategorySection() {
        </div>
        
        <div>
-         <h1 className="font-semibold text-[36px]">Browse By Category</h1>
+         <h1 className="font-semibold  text-2xl md:text-[36px]">Browse By Category</h1>
        </div>
      </div>
-   <div className="flex gap-[30px]">
+   <div className="flex flex-col md:flex-row  md:px-0 gap-[30px]">
     {category.map((cat,index)=>(
      <CategoryCard {...cat} key={index}/>
     ))}

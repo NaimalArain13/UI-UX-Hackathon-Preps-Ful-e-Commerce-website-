@@ -5,8 +5,8 @@ import ButtonComponent from '../button';
 function CategoryImage() {
   return (
     <div className='max-w-7xl mx-auto w-full py-7  text-white'>
-        <div className=' bg-Button flex justify-between gap-6 p-7'>
-       <div className='w-1/2 flex flex-col gap-5'>
+        <div className=' bg-Button flex flex-col md:flex-row md:justify-between gap-11 md:gap-6  p-7'>
+       <div className='md:w-1/2 w-full flex flex-col gap-5 mb-7 md:mb-0'>
        <p className='text-Button1'>category</p>
        <h1 className='font-semibold text-[48px]'>Enhance Your Music Experience</h1>
        <div className='flex gap-5 text-Button'>
@@ -31,7 +31,7 @@ function CategoryImage() {
         <ButtonComponent text={'Buy Now!'}  color='green' padding='px-14 py-4'/>
        </div>
        </div>
-       <div className='w-1/2'>
+       <div className='md:w-1/2 w-full'>
         <Image src={"/images/FrameImage.png"} alt="Frame Image" width={600} height={420}/>
        </div>
        </div>

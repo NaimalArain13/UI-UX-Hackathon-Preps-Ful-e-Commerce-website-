@@ -5,7 +5,7 @@ import { RiDeleteBinLine } from "react-icons/ri";
 import { BsCart } from "react-icons/bs";
 import ButtonComponent from "./button";
 export interface ProductCardProps {
-  id:number,
+  id?:number,
   image: string;
   title: string;
   price: number;
@@ -19,7 +19,6 @@ export interface ProductCardProps {
   onDelete: () => void;
 }
 export default function ProductCard({
-  id,
   image,
   title,
   price,

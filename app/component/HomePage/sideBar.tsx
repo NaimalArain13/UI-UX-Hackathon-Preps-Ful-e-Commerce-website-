@@ -10,7 +10,7 @@ import { useState } from "react";
     setActiveDropdown(activeDropdown === category ? null : category);
   };
     return (
-        <aside className="w-64 bg-white border-r border-gray-200">
+        <aside className="hidden md:flex w-64 bg-white border-r border-gray-200">
         <nav className="p-4">
           <ul className="space-y-2">
            {/* Women’s Fashion */}

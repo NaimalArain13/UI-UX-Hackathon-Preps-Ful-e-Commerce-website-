@@ -11,7 +11,7 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="top-0 sticky z-10 w-full max-w-[1440px] p-5 mx-auto border-b border-Button">
+    <div className="top-0 sticky z-10 w-full max-w-[1440px] p-5 mx-auto bg-white border-b border-Button">
       <div className="flex justify-between items-center px-4 ">
         {/* logo */}
         <div className="font-bold text-2xl">Exclusive</div>
@@ -67,6 +67,16 @@ export default function Navbar() {
           <Link href={"/contact"} className="text-Text2 text-xl font-semibold" onClick={() => setIsOpen(false)}>Contact</Link>
           <Link href={"/signup"} className="text-Text2 text-xl font-semibold" onClick={() => setIsOpen(false)}>Sign Up</Link>
           
+          <div className="flex flex-row gap-4">
+            <Link href={"/wishlist"}>
+            <CiHeart size={30} />
+            </Link>
+            <Link href={"/cart"}>
+            <BsCart size={30} />
+            </Link>
+
+              <UserPen size={30} />
+              </div>
         
         </div>
       )}

@@ -3,12 +3,13 @@ import Image from "next/image"
 import { FcGoogle } from "react-icons/fc";
 
 import { useRouter } from "next/navigation";
+import { FormEvent } from "react";
 export default function CreateAccount() {
   const router = useRouter()
 
     // Form submission handler
-    const handleSubmit = (e:any) => {
-      e.preventDefault(); // Prevent form's default submission behavior
+    const handleSubmit = (e:FormEvent<HTMLFormElement>) => {
+      e.preventDefault()
       router.push("/login"); // Navigate to the login page
     };
   return (
@@ -31,7 +32,7 @@ export default function CreateAccount() {
         <p className="text-sm text-gray-600 mb-6">Enter your details below</p>
 
         {/* Form */}
-        <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+        <form onSubmit={(handleSubmit)} className="flex flex-col gap-4">
           {/* Name Input */}
           <input
             type="text"

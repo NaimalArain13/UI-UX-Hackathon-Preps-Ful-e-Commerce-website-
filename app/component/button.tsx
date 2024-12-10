@@ -1,6 +1,5 @@
 import React from 'react';
 import clsx from 'clsx'; // Use clsx or classnames for conditional classes
-import { Button } from '@/components/ui/button';
 
 interface ButtonProps {
   text: string;

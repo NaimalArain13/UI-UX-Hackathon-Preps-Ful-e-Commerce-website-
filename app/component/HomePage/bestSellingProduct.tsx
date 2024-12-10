@@ -65,7 +65,7 @@ const wishlistProps2: ProductCardProps[] = [
   ];
 function BestSellingProduct() {
   return (
-    <div className="mx-auto w-full max-w-7xl py-7">
+    <div className="mx-auto w-full max-w-7xl p-7">
    
     <div className="flex justify-between items-center py-4">
     <div className="flex flex-col gap-5 py-4 ">
@@ -75,11 +75,11 @@ function BestSellingProduct() {
         </div>
         
         <div>
-          <h1 className="font-semibold text-[36px]">Best Selling Products</h1>
+          <h1 className="font-semibold  text-2xl md:-[36px]">Best Selling Products</h1>
         </div>
       </div>
       <Button
-        className=" py-6 px-11 rounded-none bg-Secondary2 text-Button"
+        className="p-4 md:py-6 md:px-11 rounded-none bg-Secondary2 text-Button"
         variant={"outline"}
       >
         View All
@@ -87,7 +87,7 @@ function BestSellingProduct() {
     </div>
     <div className="grid grid-cols sm:grid-cols-2 md:grid-cols-4 gap-6 ">
       {wishlistProps2.map((card, index) => (
-        <Link href={`/${card.id}`}>
+        <Link key={index} href={"/productDetail"}>
         <JustForYou key={index} {...card} />
         </Link>
       ))}

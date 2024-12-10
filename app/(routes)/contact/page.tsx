@@ -1,33 +1,13 @@
-import {
-  Breadcrumb,
-  BreadcrumbList,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbSeparator,
-  BreadcrumbPage,
-} from "@/components/ui/breadcrumb";
+import BreadCrumb from "@/app/component/breadCrumb";
 import React from "react";
 
 function Contact() {
   return (
-    <div className="min-h-screen flex flex-col">
-      {/* Breadcrumb */}
-      <div className="p-7">
-        <Breadcrumb>
-          <BreadcrumbList>
-            <BreadcrumbItem>
-              <BreadcrumbLink href="/">Home</BreadcrumbLink>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <BreadcrumbPage>Contact</BreadcrumbPage>
-            </BreadcrumbItem>
-          </BreadcrumbList>
-        </Breadcrumb>
-      </div>
+    <div className="max-w-7xl w-full p-7">
+      <BreadCrumb route={"Contact"}/>
 
       {/* Main Content Section */}
-      <div className="flex-grow flex items-center justify-center p-6">
+      <div className="flex items-center justify-center p-6">
         <div className="flex flex-col md:flex-row justify-center items-start gap-5 max-w-6xl h-[457px] w-full">
           {/* Left Section */}
           <div className="bg-white shadow-md rounded-md p-6 w-full h-full max-w-sm flex flex-col gap-8">

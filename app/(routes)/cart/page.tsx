@@ -7,16 +7,10 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import BreadCrumb from "@/app/component/breadCrumb";
 const images: RowPropType[] = [
   {
     index: 1,
@@ -33,7 +27,7 @@ const images: RowPropType[] = [
     subtotal: 600,
   },
   {
-    index: 21,
+    index: 3,
     image: "/images/product4.svg",
     product: "Small BookSelf",
     price: 650,
@@ -42,24 +36,12 @@ const images: RowPropType[] = [
 ];
 export default function Cart() {
   return (
-    <div className="max-w-7xl w-full mx-auto">
-      <div className="p-7">
-        <Breadcrumb>
-          <BreadcrumbList>
-            <BreadcrumbItem>
-              <BreadcrumbLink href="/">Home</BreadcrumbLink>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <BreadcrumbPage>Cart</BreadcrumbPage>
-            </BreadcrumbItem>
-          </BreadcrumbList>
-        </Breadcrumb>
-      </div>
+    <div className="max-w-7xl w-full mx-auto p-7">
+     <BreadCrumb route={"Contact"}/>
 
       {/* Table section */}
-      <div className="p-6">
-        <div className="overflow-y-scroll h-3/5">
+      <div className="md:p-6">
+        <div className="md:overflow-y-scroll overflow-x-scroll h-3/5">
           <table className="min-w-full  bg-white rounded-lg shadow">
             <thead className=" text-Button tracking-tight">
               <tr>
@@ -86,13 +68,13 @@ export default function Cart() {
         <div className="flex justify-between py-4">
           {" "}
           <Button
-            className="p-6 px-9  rounded-none bg-transparent text-Button"
+            className="p-4 md:p-6 md:px-9  rounded-none bg-transparent text-Button"
             variant={"outline"}
           >
             Return To Shop
           </Button>
           <Button
-            className="p-6 px-9  rounded-none bg-transparent text-Button"
+            className="p-4 md:p-6 md:px-9   rounded-none bg-transparent text-Button"
             variant={"outline"}
           >
             Update Cart
@@ -101,24 +83,24 @@ export default function Cart() {
       </div>
 
       {/* botton section */}
-      <div className="flex justify-between gap-[173px] p-6">
-        <div className="w-1/2">
-          <div className="flex justify-between gap-2 py-4">
+      <div className="flex flex-col md:flex-row justify-between md:gap-[173px]  md:p-6 py-6">
+        <div className="md:w-1/2 w-full">
+          <div className="flex flex-col md:flex-row justify-between gap-5 md:gap-2">
             <Input
               type="text"
               placeholder="Coupon Code"
-              className="p-6 px-9  rounded-none bg-transparent text-Button"
+              className="p-4 md:p-6 md:px-9   rounded-none bg-transparent text-Button"
             />
 
             <Button
-              className="p-6 px-9  rounded-none bg-Secondary2 text-Button"
+              className="p-4 md:p-6 md:px-9   rounded-none bg-Secondary2 text-Button"
               variant={"outline"}
             >
               Apply Coupon
             </Button>
           </div>
         </div>
-        <div className="w-1/2 ">
+        <div className="md:w-1/2 w-full ">
           <div className="py-4">
             <Card className="rounded-none border  border-black ">
               <CardHeader>

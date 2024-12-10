@@ -1,9 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
 
-import Image from "next/image";
-import Link from "next/link";
-
 export default function CountDownTimer() {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -35,7 +32,7 @@ export default function CountDownTimer() {
   }, []);
 
   return (
-    <div className="px-11">
+    <div className="">
        
         
         
