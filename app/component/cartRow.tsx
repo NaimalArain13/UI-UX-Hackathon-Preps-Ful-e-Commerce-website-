@@ -1,14 +1,13 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import Image from "next/image"
 import { useState } from "react";
 
 export interface RowPropType {
-    index:number,image:string,product:string,price:number,subtotal:number
+    index:number,image:string,product:string,price:number
   }
-const CartRow = ({index,image, product,price,subtotal}:RowPropType) => {
+const CartRow = ({index,image, product,price}:RowPropType) => {
   const [quantity, setQuantity] = useState(1); // Track the quantity
   const total = quantity * price; // Calculate subtotal dynamically
 
@@ -70,7 +69,7 @@ const CartRow = ({index,image, product,price,subtotal}:RowPropType) => {
           </Button>
         </div>
       </td>
-        <td className="py-4 px-5 text-gray-500">${subtotal.toFixed(2)}</td>
+        <td className="py-4 px-5 text-gray-500">${total.toFixed(2)}</td>
       </tr>
     );
   };

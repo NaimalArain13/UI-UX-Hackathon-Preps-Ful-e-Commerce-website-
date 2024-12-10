@@ -18,21 +18,30 @@ const images: RowPropType[] = [
     image: "/images/Monitor-Cart.svg",
     product: "LCD Monitor",
     price: 650,
-    subtotal: 600,
   },
   {
     index: 2,
     image: "/images/wishlist3.svg",
     product: "H1 Gamepad",
     price: 650,
-    subtotal: 600,
   },
   {
     index: 3,
     image: "/images/product4.svg",
     product: "Small BookSelf",
     price: 650,
-    subtotal: 600,
+  },
+  {
+    index: 4,
+    image: "/images/product4.svg",
+    product: "Small BookSelf",
+    price: 650,
+  },
+  {
+    index: 5,
+    image: "/images/product4.svg",
+    product: "Small BookSelf",
+    price: 650,
   },
 ];
 export default function Cart() {

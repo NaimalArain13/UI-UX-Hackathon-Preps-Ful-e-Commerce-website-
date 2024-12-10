@@ -1,14 +1,14 @@
 "use client"
 import Link from "next/link";
-import { useState } from "react";
+// import { useState } from "react";
 
 
   export default function SidebarComponent() {
-    const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+    // const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
-  const toggleDropdown = (category: string) => {
-    setActiveDropdown(activeDropdown === category ? null : category);
-  };
+  // const toggleDropdown = (category: string) => {
+  //   setActiveDropdown(activeDropdown === category ? null : category);
+  // };
     return (
         <aside className="hidden md:flex w-64 bg-white border-r border-gray-200">
         <nav className="p-4">
