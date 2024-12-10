@@ -13,7 +13,8 @@ export default function CreateAccount() {
       router.push("/login"); // Navigate to the login page
     };
   return (
-    <div className="h-screen flex flex-col lg:flex-row items-center py-6">
+    <div className="min-h-screen container mx-auto py-7 ">
+      <div className="flex flex-col md:flex-row">
       {/* Left Side - Image Section */}
       <div className="flex-1 bg-[#CBE4E8] flex justify-start items-center p-6">
         <Image 
@@ -83,6 +84,7 @@ export default function CreateAccount() {
             Log in
           </a>
         </p>
+      </div>
       </div>
     </div>
   );

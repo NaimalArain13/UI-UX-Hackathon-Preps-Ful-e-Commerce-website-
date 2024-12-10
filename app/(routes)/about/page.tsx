@@ -13,7 +13,7 @@ function AboutPage() {
 
       {/* section one*/}
 
-      <div className="flex flex-col md:flex-row justify-between gap-4 p-7 md:p-0">
+      <div className="flex flex-col md:flex-row justify-between gap-4 py-7">
         <div className="md:w-1/2 w-full flex text-justify items-start justify-center flex-col gap-4 md:px-11">
           <h1 className="font-bold text-[36px] ">Our Story</h1>
           <p >

@@ -15,14 +15,21 @@ import { useState } from "react";
           <ul className="space-y-2">
            {/* Women’s Fashion */}
           <li>
-            <button
-              className="w-full flex justify-between items-center text-gray-700 hover:text-blue-500 hover:bg-gray-100 rounded-md p-2"
+          <Link
+                href="#"
+                className="w-full flex justify-between items-center text-gray-700 hover:text-red-500 hover:bg-red-200 rounded-md p-2"
+              >
+                <span>Women&#39;s Fashion </span> <span className="ml-3">▼</span>
+              </Link>
+            {/* <button
+              className="w-full flex justify-between items-center text-gray-700 hover:text-red-500 hover:bg-red-200rounded-md p-2"
               onClick={() => toggleDropdown("womens-fashion")}
             >
-              <span>Women’s Fashion</span>
+              <span>Women&#39;s Fashion</span>
               <span>{activeDropdown === "womens-fashion" ? "▲" : "▼"}</span>
-            </button>
-            {activeDropdown === "womens-fashion" && (
+              <span>▼</span>
+            </button> */}
+            {/* {activeDropdown === "womens-fashion" && (
               <ul className="mt-2 space-y-1 pl-4">
                 <li>
                   <Link
@@ -49,19 +56,25 @@ import { useState } from "react";
                   </Link>
                 </li>
               </ul>
-            )}
+            )} */}
           </li>
 
           {/* Men’s Fashion */}
           <li>
-            <button
-              className="w-full flex justify-between items-center text-gray-700 hover:text-blue-500 hover:bg-gray-100 rounded-md p-2"
+          <Link
+                href="#"
+                className="w-full flex justify-between items-center text-gray-700 hover:text-red-500 hover:bg-red-200 rounded-md p-2"
+              >
+                <span>Men’s Fashion</span> <span className="ml-3">▼</span>
+              </Link>
+            {/* <button
+              className="w-full flex justify-between items-center text-gray-700 hover:text-red-500 hover:bg-red-200rounded-md p-2"
               onClick={() => toggleDropdown("mens-fashion")}
             >
               <span>Men’s Fashion</span>
               <span>{activeDropdown === "mens-fashion" ? "▲" : "▼"}</span>
-            </button>
-            {activeDropdown === "mens-fashion" && (
+            </button> */}
+            {/* {activeDropdown === "mens-fashion" && (
               <ul className="mt-2 space-y-1 pl-4">
                 <li>
                   <Link
@@ -88,12 +101,12 @@ import { useState } from "react";
                   </Link>
                 </li>
               </ul>
-            )}
+            )} */}
           </li>
             <li>
               <Link
                 href="#"
-                className="flex items-center space-x-3 text-gray-700 hover:text-blue-500 hover:bg-gray-100 rounded-md p-2"
+                className="flex items-center space-x-3 text-gray-700 hover:text-red-500 hover:bg-red-200 rounded-md p-2"
               >
                 <span>Electronics</span>
               </Link>
@@ -101,7 +114,7 @@ import { useState } from "react";
             <li>
               <Link
                 href="#"
-                className="flex items-center space-x-3 text-gray-700 hover:text-blue-500 hover:bg-gray-100 rounded-md p-2"
+                className="flex items-center space-x-3 text-gray-700 hover:text-red-500 hover:bg-red-200 rounded-md p-2"
               >
                 <span>Home & Lifestyle</span>
               </Link>
@@ -109,7 +122,7 @@ import { useState } from "react";
             <li>
               <Link
                 href="#"
-                className="flex items-center space-x-3 text-gray-700 hover:text-blue-500 hover:bg-gray-100 rounded-md p-2"
+                className="flex items-center space-x-3 text-gray-700 hover:text-red-500 hover:bg-red-200 rounded-md p-2"
               >
                 <span>Medicine</span>
               </Link>
@@ -117,7 +130,7 @@ import { useState } from "react";
             <li>
               <Link
                 href="#"
-                className="flex items-center space-x-3 text-gray-700 hover:text-blue-500 hover:bg-gray-100 rounded-md p-2"
+                className="flex items-center space-x-3 text-gray-700 hover:text-red-500 hover:bg-red-200 rounded-md p-2"
               >
                 <span>Sports & Outdoor</span>
               </Link>
@@ -125,7 +138,7 @@ import { useState } from "react";
             <li>
               <Link
                 href="#"
-                className="flex items-center space-x-3 text-gray-700 hover:text-blue-500 hover:bg-gray-100 rounded-md p-2"
+                className="flex items-center space-x-3 text-gray-700 hover:text-red-500 hover:bg-red-200 rounded-md p-2"
               >
                 <span>Baby & Toys</span>
               </Link>
@@ -133,7 +146,7 @@ import { useState } from "react";
             <li>
               <Link
                 href="#"
-                className="flex items-center space-x-3 text-gray-700 hover:text-blue-500 hover:bg-gray-100 rounded-md p-2"
+                className="flex items-center space-x-3 text-gray-700 hover:text-red-500 hover:bg-red-200 rounded-md p-2"
               >
                 <span>Groceries & Pets</span>
               </Link>
@@ -141,7 +154,7 @@ import { useState } from "react";
             <li>
               <Link
                 href="#"
-                className="flex items-center space-x-3 text-gray-700 hover:text-blue-500 hover:bg-gray-100 rounded-md p-2"
+                className="flex items-center space-x-3 text-gray-700 hover:text-red-500 hover:bg-red-200 rounded-md p-2"
               >
                 <span>Health & Beauty</span>
               </Link>

@@ -9,7 +9,7 @@ import {
   } from "@/components/ui/breadcrumb";
 function BreadCrumb({route}:{route:string}) {
   return (
-  <div className="p-7">
+  <div className="">
     <Breadcrumb>
       <BreadcrumbList>
         <BreadcrumbItem>

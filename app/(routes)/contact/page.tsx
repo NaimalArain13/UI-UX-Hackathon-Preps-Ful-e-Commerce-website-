@@ -3,18 +3,18 @@ import React from "react";
 
 function Contact() {
   return (
-    <div className="max-w-7xl w-full p-7">
-      <BreadCrumb route={"Contact"}/>
+    <div className="container mx-auto p-4 sm:p-7  min-h-screen">
+      {/* Breadcrumb Section */}
+      <BreadCrumb route={"Contact"} />
 
       {/* Main Content Section */}
-      <div className="flex items-center justify-center p-6">
-        <div className="flex flex-col md:flex-row justify-center items-start gap-5 max-w-6xl h-[457px] w-full">
+      <div className="flex flex-col items-center justify-center p-4 sm:p-6">
+        <div className="flex flex-col md:flex-row justify-center items-start gap-6 max-w-6xl w-full">
           {/* Left Section */}
-          <div className="bg-white shadow-md rounded-md p-6 w-full h-full max-w-sm flex flex-col gap-8">
+          <div className="bg-white shadow-md rounded-md p-6 w-full md:max-w-sm flex flex-col gap-8">
             {/* Call Us Section */}
             <div className="flex items-start gap-3">
-              <div className="text-red-500 text-2xl">
-              </div>
+              
               <div>
                 <h3 className="font-semibold text-lg">Call To Us</h3>
                 <p className="text-sm text-gray-600">
@@ -39,29 +39,29 @@ function Contact() {
           </div>
 
           {/* Right Section */}
-          <div className="bg-white shadow-md rounded-md h-full p-6 w-full max-w-2xl flex flex-col gap-14">
+          <div className="bg-white shadow-md rounded-md p-6 w-full flex flex-col gap-6">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <input
                 type="text"
                 placeholder="Your Name *"
-                className="bg-gray-200 rounded-md p-3 w-full text-sm focus:ring-2 focus:ring-red-500"
+                className="bg-gray-100 rounded-md p-3 w-full text-sm focus:ring-2 focus:ring-red-500"
               />
               <input
                 type="email"
                 placeholder="Your Email *"
-                className="bg-gray-200 rounded-md p-3 w-full text-sm focus:ring-2 focus:ring-red-500"
+                className="bg-gray-100 rounded-md p-3 w-full text-sm focus:ring-2 focus:ring-red-500"
               />
               <input
                 type="text"
                 placeholder="Your Phone *"
-                className="bg-gray-200 rounded-md p-3 w-full text-sm focus:ring-2 focus:ring-red-500"
+                className="bg-gray-100 rounded-md p-3 w-full text-sm focus:ring-2 focus:ring-red-500"
               />
             </div>
             <textarea
               placeholder="Your Message"
-              className="bg-gray-200 rounded-md p-3 w-full text-sm focus:ring-2 focus:ring-red-500 h-32 resize-none"
+              className="bg-gray-100 rounded-md p-3 w-full text-sm focus:ring-2 focus:ring-red-500 h-32 resize-none"
             ></textarea>
-            <button className="bg-red-500  text-white py-3 px-6 rounded-md hover:bg-red-600 w-fit self-end">
+            <button className="bg-red-500 text-white py-3 px-6 rounded-md hover:bg-red-600 w-fit self-end">
               Send Message
             </button>
           </div>

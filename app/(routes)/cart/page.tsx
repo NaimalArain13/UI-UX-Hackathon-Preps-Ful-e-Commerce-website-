@@ -11,6 +11,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import BreadCrumb from "@/app/component/breadCrumb";
+
 const images: RowPropType[] = [
   {
     index: 1,
@@ -35,6 +36,8 @@ const images: RowPropType[] = [
   },
 ];
 export default function Cart() {
+  
+ 
   return (
     <div className="max-w-7xl w-full mx-auto p-7">
      <BreadCrumb route={"Contact"}/>

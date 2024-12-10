@@ -121,7 +121,7 @@ export default function WishListPage() {
       <div className="flex justify-between items-center py-4">
         <h1 className="font-medium text-xl">Wishlist (4)</h1>
         <Button
-          className="p-6 px-9  rounded-none bg-transparent text-Button"
+          className="md:p-6 md:px-9  rounded-none bg-transparent text-Button"
           variant={"outline"}
         >
           Move All To Bag
@@ -141,7 +141,7 @@ export default function WishListPage() {
           <h1 className="font-medium text-xl">Just For You</h1>
         </div>
         <Button
-          className=" py-6 px-11 rounded-none bg-transparent text-Button"
+          className="md:p-6 md:px-11 rounded-none bg-transparent text-Button"
           variant={"outline"}
         >
           See All
