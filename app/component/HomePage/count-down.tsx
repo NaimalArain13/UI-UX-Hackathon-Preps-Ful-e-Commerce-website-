@@ -11,9 +11,9 @@ export default function CountDownTimer() {
 
   useEffect(() => {
     const countdown = setInterval(() => {
-      const launchDate = new Date("January 15, 2025 00:00:00").getTime();
+      const saleEnd = new Date("January 15, 2025 00:00:00").getTime();
       const now = new Date().getTime();
-      const gap = launchDate - now;
+      const gap = saleEnd - now;
 
       const second = 1000;
       const minute = second * 60;
@@ -37,31 +37,31 @@ export default function CountDownTimer() {
         
         
 
-        <div className="flex gap-6">
+        <div className="flex gap-3 sm:gap-4 md:gap-6">
           <div>
             Days
-            <span className="flex flex-col items-center text-Text2 font-bold text-3xl">
+            <span className="flex flex-col items-center text-Text2 font-bold text-2xl sm:text-3xl">
               {timeLeft.days}
             </span>{" "}
           </div>
           <p className="text-Secondary2 font-extrabold items-center flex">:</p>
           <div>
             Hours
-            <span className="flex flex-col items-center text-Text2 font-bold text-3xl">
+            <span className="flex flex-col items-center text-Text2 font-bold text-2xl sm:text-3xl">
               {timeLeft.hours}
             </span>{" "}
           </div>
           <p className="text-Secondary2 font-extrabold items-center flex">:</p>
           <div>
             Minutes
-            <span className="flex flex-col items-center text-Text2 font-bold text-3xl">
+            <span className="flex flex-col items-center text-Text2 font-bold text-2xl sm:text-3xl">
               {timeLeft.minutes}
             </span>{" "}
           </div>
           <p className="text-Secondary2 font-extrabold items-center flex">:</p>
           <div>
             Seconds
-            <span className="flex flex-col items-center text-Text2 font-bold text-3xl">
+            <span className="flex flex-col items-center text-Text2 font-bold text-2xl sm:text-3xl">
               {timeLeft.seconds}
             </span>{" "}
           </div>
