@@ -5,7 +5,7 @@ function Contact() {
   return (
     <div className="container mx-auto p-4 sm:p-7  min-h-screen">
       {/* Breadcrumb Section */}
-      <BreadCrumb route={"Contact"} />
+      <BreadCrumb route1={"Contact"} />
 
       {/* Main Content Section */}
       <div className="flex flex-col items-center justify-center p-4 sm:p-6">

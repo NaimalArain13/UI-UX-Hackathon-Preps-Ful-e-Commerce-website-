@@ -7,7 +7,7 @@ import {
     BreadcrumbPage,
     BreadcrumbSeparator,
   } from "@/components/ui/breadcrumb";
-function BreadCrumb({route}:{route:string}) {
+function BreadCrumb({route1, route2, route3}:{route1:string, route2?:string, route3?:string}) {
   return (
   <div className="">
     <Breadcrumb>
@@ -17,7 +17,15 @@ function BreadCrumb({route}:{route:string}) {
         </BreadcrumbItem>
         <BreadcrumbSeparator />
         <BreadcrumbItem>
-          <BreadcrumbPage className='font-bold'>{route}</BreadcrumbPage>
+          <BreadcrumbPage className='font-bold'>{route1}</BreadcrumbPage>
+        </BreadcrumbItem>
+        <BreadcrumbSeparator />
+        <BreadcrumbItem>
+          <BreadcrumbPage className='font-bold'>{route2}</BreadcrumbPage>
+        </BreadcrumbItem>
+        <BreadcrumbSeparator />
+        <BreadcrumbItem>
+          <BreadcrumbPage className='font-bold'>{route3}</BreadcrumbPage>
         </BreadcrumbItem>
       </BreadcrumbList>
     </Breadcrumb>

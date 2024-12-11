@@ -16,7 +16,6 @@ const wishlistProps2: ProductCardProps[] = [
       heartIcon: <CiHeart size={24}/>,
       priceStrikeThrough: 1160,
       onAddToCart: () => console.log("Added to cart"),
-      onDelete: () => console.log("Deleted"),
     },
     {
       id:14,
@@ -28,9 +27,7 @@ const wishlistProps2: ProductCardProps[] = [
       onAddToCart: () => {
         alert("Product Added to the cart");
       },
-      onDelete: () => {
-        alert("Product deleted from the wishlist");
-      },
+      
     },
     {
       id:15,
@@ -44,9 +41,7 @@ const wishlistProps2: ProductCardProps[] = [
       onAddToCart: () => {
         alert("Product Added to the cart");
       },
-      onDelete: () => {
-        alert("Product deleted from the wishlist");
-      },
+      
     },
     {
       id:16,
@@ -58,9 +53,7 @@ const wishlistProps2: ProductCardProps[] = [
       onAddToCart: () => {
         alert("Product Added to the cart");
       },
-      onDelete: () => {
-        alert("Product deleted from the wishlist");
-      },
+      
     },
   ];
 function BestSellingProduct() {

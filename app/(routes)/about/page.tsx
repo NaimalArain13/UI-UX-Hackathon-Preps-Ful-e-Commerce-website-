@@ -9,7 +9,7 @@ import BreadCrumb from "@/app/component/breadCrumb";
 function AboutPage() {
   return (
     <div className="max-w-7xl w-full  p-7">
-      <BreadCrumb route={"About"}/>
+      <BreadCrumb route1={"About"}/>
 
       {/* section one*/}
 

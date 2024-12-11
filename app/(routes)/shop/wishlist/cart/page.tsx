@@ -1,3 +1,4 @@
+"use client"
 import CartRow, { RowPropType } from "@/app/component/cartRow";
 import {
   Card,
@@ -11,6 +12,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import BreadCrumb from "@/app/component/breadCrumb";
+import { useRouter } from "next/navigation";
 
 const images: RowPropType[] = [
   {
@@ -46,16 +48,17 @@ const images: RowPropType[] = [
 ];
 export default function Cart() {
   
+  const router = useRouter()
  
   return (
     <div className="max-w-7xl w-full mx-auto p-7">
-     <BreadCrumb route={"Contact"}/>
+     <BreadCrumb route1={"Contact"}/>
 
       {/* Table section */}
       <div className="md:p-6">
         <div className="md:overflow-y-scroll overflow-x-scroll h-3/5">
           <table className="min-w-full  bg-white rounded-lg shadow">
-            <thead className=" text-Button tracking-tight">
+            <thead className="text-Button tracking-tight">
               <tr>
                 {["#", "Product", "Price", "Quantity", "Subtotal"].map(
                   (header, index) => (
@@ -134,6 +137,7 @@ export default function Cart() {
               </CardContent>
               <CardFooter className="flex justify-center">
                 <Button
+                onClick={()=>router.push("/shop/wishlist/cart/checkout")}
                   className="p-6 px-9  rounded-none bg-Secondary2 text-Button"
                   variant={"outline"}
                 >

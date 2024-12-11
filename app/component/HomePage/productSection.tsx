@@ -19,7 +19,7 @@ function ProductSection() {
           heartIcon: <CiHeart size={24}/>,
           priceStrikeThrough: 1160,
           onAddToCart: () => console.log("Added to cart"),
-          onDelete: () => console.log("Deleted"),
+          
         },
         {
           id:2,
@@ -31,9 +31,7 @@ function ProductSection() {
           onAddToCart: () => {
             alert("Product Added to the cart");
           },
-          onDelete: () => {
-            alert("Product deleted from the wishlist");
-          },
+          
         },
         {
           id:3,
@@ -47,9 +45,7 @@ function ProductSection() {
           onAddToCart: () => {
             alert("Product Added to the cart");
           },
-          onDelete: () => {
-            alert("Product deleted from the wishlist");
-          },
+          
         },
         {
           id:4,
@@ -61,9 +57,7 @@ function ProductSection() {
           onAddToCart: () => {
             alert("Product Added to the cart");
           },
-          onDelete: () => {
-            alert("Product deleted from the wishlist");
-          },
+          
         },
         {
           id:5,
@@ -78,9 +72,7 @@ function ProductSection() {
           onAddToCart: () => {
             alert("Product Added to the cart");
           },
-          onDelete: () => {
-            alert("Product deleted from the wishlist");
-          },
+          
         },
         {
           id:6,
@@ -92,9 +84,7 @@ function ProductSection() {
           onAddToCart: () => {
             alert("Product Added to the cart");
           },
-          onDelete: () => {
-            alert("Product deleted from the wishlist");
-          },
+          
         },
         {
           id:7,
@@ -109,9 +99,7 @@ function ProductSection() {
           onAddToCart: () => {
             alert("Product Added to the cart");
           },
-          onDelete: () => {
-            alert("Product deleted from the wishlist");
-          },
+          
         },
         {
           id:8,
@@ -123,9 +111,7 @@ function ProductSection() {
           onAddToCart: () => {
             alert("Product Added to the cart");
           },
-          onDelete: () => {
-            alert("Product deleted from the wishlist");
-          },
+          
         },
       ];
   return (

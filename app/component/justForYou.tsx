@@ -23,7 +23,7 @@ export default function JustForYou({
   padding,
   heartIcon,
   onAddToCart,
-  onDelete,
+ 
 }:ProductCardProps){
   const totalStars = 5;
   return (
@@ -42,7 +42,7 @@ export default function JustForYou({
      <div className="absolute top-2 right-2 flex flex-col gap-1">
           <Button
             className="px-2 text-Button bg-Primary rounded-full"
-            onClick={onDelete}
+            
             aria-label="View"
           >
             <MdOutlineRemoveRedEye size={24} />
@@ -65,7 +65,6 @@ export default function JustForYou({
 
       {/* Add to Cart Button */}
       <button
-      
         className="w-full bg-black text-white py-2 gap-2 rounded-md hover:bg-gray-800 flex justify-center items-center"
         onClick={onAddToCart}
       >

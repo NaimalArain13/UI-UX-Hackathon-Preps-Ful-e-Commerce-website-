@@ -36,10 +36,10 @@ export default function Navbar() {
             />
           </div>
           <div className="md:flex gap-4 hidden">
-            <Link href={"/wishlist"}>
+            <Link href={"/shop/wishlist"}>
             <CiHeart size={28} />
             </Link>
-            <Link href={"/cart"}>
+            <Link href={"/shop/wishlist/cart"}>
             <BsCart size={28} />
             </Link>
 
@@ -68,10 +68,10 @@ export default function Navbar() {
           <Link href={"/signup"} className="text-Text2 text-xl font-semibold" onClick={() => setIsOpen(false)}>Sign Up</Link>
           
           <div className="flex flex-row gap-4">
-            <Link href={"/wishlist"}>
+            <Link href={"/shop/wishlist"}>
             <CiHeart size={30} />
             </Link>
-            <Link href={"/cart"}>
+            <Link href={"/shop/wishlist/cart"}>
             <BsCart size={30} />
             </Link>
 

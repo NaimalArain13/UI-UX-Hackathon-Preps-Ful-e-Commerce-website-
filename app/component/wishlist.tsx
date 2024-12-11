@@ -16,7 +16,7 @@ export interface ProductCardProps {
   color?: "red" | "blue" | "green";
   padding?: string;
   onAddToCart: () => void;
-  onDelete: () => void;
+  
 }
 export default function ProductCard({
   image,
@@ -27,7 +27,7 @@ export default function ProductCard({
   color,
   padding,
   onAddToCart,
-  onDelete,
+  
 }: ProductCardProps) {
   return (
     <div className="relative w-full h-[322px] bg-Primary">
@@ -41,7 +41,7 @@ export default function ProductCard({
         {/* Delete Icon */}
         <button
           className="absolute top-2 right-2 p-1 text-Button bg-Primary rounded-full"
-          onClick={onDelete}
+        
           aria-label="Delete"
         >
           <RiDeleteBinLine size={24} />

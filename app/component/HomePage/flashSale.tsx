@@ -17,7 +17,6 @@ function FlashSale() {
       heartIcon: <CiHeart size={24}/>,
       priceStrikeThrough: 1160,
       onAddToCart: () => console.log("Added to cart"),
-      onDelete: () => console.log("Deleted"),
     },
     {id:10,
       image: "/images/Monitor-Cart.svg",
@@ -28,9 +27,7 @@ function FlashSale() {
       onAddToCart: () => {
         alert("Product Added to the cart");
       },
-      onDelete: () => {
-        alert("Product deleted from the wishlist");
-      },
+      
     },
     {id:11,
       image: "/images/Product-7.svg",
@@ -43,9 +40,7 @@ function FlashSale() {
       onAddToCart: () => {
         alert("Product Added to the cart");
       },
-      onDelete: () => {
-        alert("Product deleted from the wishlist");
-      },
+      
     },
     {
       id:12,
@@ -57,9 +52,7 @@ function FlashSale() {
       onAddToCart: () => {
         alert("Product Added to the cart");
       },
-      onDelete: () => {
-        alert("Product deleted from the wishlist");
-      },
+      
     },
   ];
   return (

@@ -6,6 +6,7 @@ import { ProductCardProps } from "@/lib/data";
 import { CiHeart } from "react-icons/ci";
 import JustForYou from "@/app/component/justForYou";
 import  Link  from "next/link";
+import { useRouter } from "next/navigation";
 
 const wishlistProps2: ProductCardProps[] = [
   {
@@ -76,6 +77,7 @@ const wishlistProps2: ProductCardProps[] = [
   },
 ];
 export default function ProductDetailPage() {
+  const router = useRouter()
   return (
     <div className="min-h-screen bg-Primary ">
       <div className="container mx-auto p-4 lg:p-8">
@@ -182,7 +184,9 @@ export default function ProductDetailPage() {
                 />
                 <button className="px-4 py-2 bg-gray-100">+</button>
               </div>
-              <button className="px-6 py-2 bg-red-500 text-white rounded-md hover:bg-red-600">
+              <button 
+              onClick={()=>router.push("/shop/wishlist/cart")}
+              className="px-6 py-2 bg-red-500 text-white rounded-md hover:bg-red-600">
                 Buy Now
               </button>
             </div>
