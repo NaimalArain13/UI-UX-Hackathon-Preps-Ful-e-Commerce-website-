@@ -42,8 +42,9 @@ export default function Navbar() {
             <Link href={"/shop/wishlist/cart"}>
             <BsCart size={28} />
             </Link>
-
+            <Link  href={"/myAccount"}>
               <UserPen size={28} />
+              </Link>
           </div>
           </div>
         {/* Mobile Menu */}
@@ -68,14 +69,16 @@ export default function Navbar() {
           <Link href={"/signup"} className="text-Text2 text-xl font-semibold" onClick={() => setIsOpen(false)}>Sign Up</Link>
           
           <div className="flex flex-row gap-4">
-            <Link href={"/shop/wishlist"}>
-            <CiHeart size={30} />
+            <Link href={"/shop/wishlist"} >
+            <CiHeart size={30} onClick={() => setIsOpen(false)}/>
             </Link>
-            <Link href={"/shop/wishlist/cart"}>
+            <Link href={"/shop/wishlist/cart"} onClick={() => setIsOpen(false)}>
             <BsCart size={30} />
             </Link>
 
+            <Link  href={"/myAccount"} onClick={() => setIsOpen(false)}>
               <UserPen size={30} />
+              </Link>
               </div>
         
         </div>

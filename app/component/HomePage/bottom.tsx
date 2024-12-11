@@ -44,7 +44,7 @@ interface Props {
         className='rounded-full bg-Button p-2'
         />
         </div>
-        <h1 className='text-[26px] font-semibold'>{title}</h1>
+        <h1 className='text-xl md:text-[20px] font-semibold'>{title}</h1>
         <p className='text-sm'>{description}</p>
     </div>
     )

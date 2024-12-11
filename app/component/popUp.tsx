@@ -13,8 +13,8 @@ export default function Popup({ message, onClose }: PopupProps) {
   }, [onClose]);
 
   return (
-    <div className="fixed top-20 left-1/2 transform -translate-x-1/2 bg-Secondary2 border border-gray-300 shadow-lg rounded-lg p-4 z-50 text-center">
-      <p className="text-lg font-medium text-white">{message}</p>
+    <div className="fixed top-20 left-1/2 transform -translate-x-1/2 bg-Secondary2 border border-gray-300 shadow-lg rounded-lg md:p-4 z-50 text-center">
+      <p className="md:text-lg font-medium text-white">{message}</p>
       </div>
 
   )}

@@ -3,7 +3,7 @@ import Image from "next/image"
 import Link from "next/link";
 export default function Login() {
   return (
-    <div className="min-h-screen container mx-auto py-7 ">
+    <div className="min-h-screen container mx-auto nd:py-7 ">
       <div className="flex flex-col md:flex-row">
       {/* Left Side - Image Section */}
       <div className="flex-1 bg-[#CBE4E8] flex justify-start items-center p-6">

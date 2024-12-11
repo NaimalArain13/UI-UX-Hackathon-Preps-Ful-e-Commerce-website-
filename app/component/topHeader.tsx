@@ -9,7 +9,7 @@ export default function TopBar() {
           {/* Promotional Message */}
           <div className="">
             Summer Sale for All Swim Suits And Free Express Delivery — OFF 50%!{" "}
-            <span onClick={()=>router.push("/cart")} className="underline cursor-pointer">Shop Now</span>
+            <span onClick={()=>router.push("/shop/wishlist/cart")} className="underline cursor-pointer">Shop Now</span>
           </div>
           {/* Language Selector */}
           <div className="flex items-center gap-2">

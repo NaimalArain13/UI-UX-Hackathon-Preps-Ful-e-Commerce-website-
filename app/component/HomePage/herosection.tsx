@@ -7,7 +7,7 @@ import SidebarComponent from "./sideBar";
 
 export default function HeroSection(){
     return(
-        <div className='max-w-7xl mx-auto w-full py-7 flex  text-white'>
+        <div className='max-w-7xl mx-auto w-full md:py-7 flex  text-white'>
             <SidebarComponent />
             <div className=" w-0 border-l border-gray-400 md:pl-3"></div>
         <div className=' bg-Button flex flex-col md:flex-row md:justify-between justify-center gap-9 md:gap-6 p-7'>
