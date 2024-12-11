@@ -61,7 +61,7 @@ function Contact() {
               placeholder="Your Message"
               className="bg-gray-100 rounded-md p-3 w-full text-sm focus:ring-2 focus:ring-red-500 h-32 resize-none"
             ></textarea>
-            <button className="bg-red-500 text-white py-3 px-6 rounded-md hover:bg-red-600 w-fit self-end">
+            <button className="bg-red-500 text-white py-3 px-6 rounded-md hover:bg-red-600 w-full md:self-end md:w-fit">
               Send Message
             </button>
           </div>
